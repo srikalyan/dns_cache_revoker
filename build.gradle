@@ -19,8 +19,8 @@ jar {
 dependencies {
     compile 'commons-logging:commons-logging:1.2'
 
-    testcompile 'junit:junit:4.11'
-    testcompile 'org.easymock:easymockclassextension:3.2'
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.easymock:easymockclassextension:3.2'
 
 
 }
