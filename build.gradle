@@ -1,0 +1,26 @@
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+sourceCompatibility = 1.6
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+    	     attributes 'Implementation-Title': 'dns_cache_revoker', 'Implementation-Version': version
+    }
+}
+
+
+dependencies {
+    compile 'commons-logging:commons-logging:1.2'
+
+    testcompile 'junit:junit:4.11'
+    testcompile 'org.easymock:easymockclassextension:3.2'
+
+
+}
