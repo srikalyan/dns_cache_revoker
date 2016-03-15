@@ -1,4 +1,4 @@
-package com.srisnotes.dnscache.api;
+package com.srikalyan.dnscache.api;
 
 import java.net.InetAddress;
 import java.util.Date;

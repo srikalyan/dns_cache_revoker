@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: dns_cache_revoker
-Implementation-Version: 1.0
-

@@ -1,4 +1,4 @@
-package com.srisnotes.dnscache.api;
+package com.srikalyan.dnscache.api;
 
 /**
  * Defines various useful methods to play with DNS cache.

@@ -1,17 +1,15 @@
-package com.srisnotes.dnscache.api.impl;
+package com.srikalyan.dnscache.api.impl;
 
-import com.srisnotes.dnscache.api.DNSCacheEntry;
-import com.srisnotes.dnscache.api.Revoker;
+import com.srikalyan.dnscache.api.DNSCacheEntry;
+import com.srikalyan.dnscache.api.Revoker;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import java.lang.reflect.Field;
 import java.net.InetAddress;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 
 /**
