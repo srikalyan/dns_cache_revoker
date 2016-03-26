@@ -1,9 +1,11 @@
+apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
-apply plugin: 'java'
+
+defaultTasks 'build'
 
 sourceCompatibility = 1.6
-version = '1.0'
+group = 'com.srikalyan'
 
 repositories {
     mavenCentral()
@@ -11,7 +13,7 @@ repositories {
 
 jar {
     manifest {
-    	     attributes 'Implementation-Title': 'dns_cache_revoker', 'Implementation-Version': version
+        attributes 'Implementation-Title': 'dns_cache_revoker', 'Implementation-Version': version
     }
 }
 
@@ -21,6 +23,8 @@ dependencies {
 
     testCompile 'junit:junit:4.11'
     testCompile 'org.easymock:easymockclassextension:3.2'
+}
 
-
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.12'
 }
