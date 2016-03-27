@@ -1,6 +1,11 @@
 language: java
 jdk:
-  - oraclejdk8
-  - oraclejdk7
-  - openjdk6
+- oraclejdk8
+- oraclejdk7
+- openjdk6
 script: ./gradlew clean build
+after_success: ./gradlew uploadArchives -PossrhUsername="${SONATYPE_USERNAME}" -PossrhPassword="${SONATYPE_PASSWORD}"
+env:
+  global:
+  - secure: D1W31lwqxNzk+LAXJPdTaie8sjui3O6PrQ+7f1+XEaWfVPih6CfXvnAkEGslCGth4R9OxrAsbs0bvJOBrLrgLmOx05ZB/3p68ZxUCc97LLcAKkHgilBIBftS99V+brnrBGzdmtC8ecsSNGWQZ9ZSDt4H5lnPoF+YG8/v42Aqyc0=
+  - secure: Bfb88JDnXTL5NuKsHj2wJzZt2KEBgUbKBHfioKwZsH8XrvuWtzWuC6MYA/XwGie2tOi5mgJEPMOnyA4qwTeY7VBZr5alt13p2wLxlXGUtNbVcKVZPpDxIHFoSakJ1+q3o0u3grckve/CCB1fKh/iIzTIX0Yi7ZbFIdaRarCZ3K8=
