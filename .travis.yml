@@ -4,7 +4,7 @@ jdk:
 - oraclejdk7
 - openjdk6
 install: true
-script: ./gradlew clean build -PossrhUsername="${SONATYPE_USERNAME}" -PossrhPassword="${SONATYPE_PASSWORD}
+script: ./gradlew clean build -PossrhUsername="${SONATYPE_USERNAME}" -PossrhPassword="${SONATYPE_PASSWORD}"
 after_success: ./gradlew uploadArchives -PossrhUsername="${SONATYPE_USERNAME}" -PossrhPassword="${SONATYPE_PASSWORD}"
 env:
   global:
